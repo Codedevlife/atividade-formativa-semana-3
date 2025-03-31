@@ -1,0 +1,13 @@
+name: Continuous Integration - Criando CI
+on: 
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: wemake-python-styleguide
+        uses: wemake-services/wemake-python-styleguide@1.1.0
+        
